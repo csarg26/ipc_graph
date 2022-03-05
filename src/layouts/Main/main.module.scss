@@ -3,7 +3,7 @@
     display: grid;
     grid-template-areas: 
         "header header header"
-        "content content content";
+        ". content .";
     grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-template-rows: 0.2fr 1fr;
     grid-column-gap: 0px;
@@ -11,5 +11,9 @@
 
     header{
         grid-area: header;
+    }
+
+    .content{
+        grid-area: content;
     }
 }
