@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './pages/Home';
+import './styles/styles.scss';
+
+import Main from './pages/Main';
 
 ReactDOM.render(
-  <Home />,
+  <Main />,
   document.getElementById('app'),
 );

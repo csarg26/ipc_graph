@@ -1,4 +1,5 @@
 {
+    "includes": ["src"],
     "compilerOptions": {
       "outDir": "./public",
       "target": "ES6",
