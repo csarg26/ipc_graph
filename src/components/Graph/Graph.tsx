@@ -14,6 +14,7 @@ import {
 import { Line } from 'react-chartjs-2';
 import zoomPlugin from "chartjs-plugin-zoom";
 import 'chartjs-adapter-moment';
+import styles from './graph.module.scss';
 
 
 interface propsType{
@@ -75,9 +76,12 @@ const Graph = ({ dataState }: propsType) => {
         ],
       };
 
-    return (<section>
-        {dataState.loading ? <Loader /> : <Line options={options} data={data} />}
-    </section>);
+      return (
+      <section className={styles.graph}>
+            {dataState.loading ? 
+                <Loader />: 
+                <Line options={options} data={data} />}
+        </section>);
 }
 
 export default Graph;
