@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './header.module.scss';
 
-const Header: React.FunctionComponent = () => {
+const Header = () => {
     return <header>
         <nav className={styles.navLogo}>
-           IPC Graph
+            IPC Graph
         </nav>
     </header>
 }

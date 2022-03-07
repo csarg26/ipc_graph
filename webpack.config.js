@@ -37,6 +37,9 @@ module.exports = {
     path: path.resolve(__dirname, './public'),
     filename: 'bundle.js',
   },
+  presets: [
+    '@babel/preset-typescript'
+  ],
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
