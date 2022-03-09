@@ -36,14 +36,13 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './public'),
     filename: 'bundle.js',
+    publicPath: '/'
   },
-  presets: [
-    '@babel/preset-typescript'
-  ],
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
     static: path.resolve(__dirname, './public'),
+    historyApiFallback: true
   },
 };

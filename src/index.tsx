@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/styles.scss';
 
-import Main from './layouts/Main';
+import App from './App';
 
 ReactDOM.render(
-  <Main />,
+  <App />,
   document.getElementById('app'),
 );
