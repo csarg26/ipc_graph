@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Graph from '../../components/Graph';
+import InfoCards from '../../components/InfoCards';
 import { dataObjType } from '../../types/ipc.type';
 import { fetchIpc } from '../../services/ipc.service';
 
@@ -23,6 +24,7 @@ const IpcPage: React.FunctionComponent = () => {
 
     return <>
         <Graph dataState={ipcData} />
+        <InfoCards dataState={ipcData} />
     </>;
 }
 

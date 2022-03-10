@@ -31,6 +31,10 @@ const AuthDataProvider = (props) => {
 
   const onLogout = () => {
     Cookies.remove('token');
+    setAuthData({
+      logged: false,
+      token: null
+    });
   };
 
   const onLogin = async (token) => {

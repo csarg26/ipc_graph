@@ -1,0 +1,22 @@
+.card{
+    width: 18rem;
+    background-color: rgb(186, 165, 135);
+    height: 7rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: rgb(206, 73, 38);
+    
+    .header{
+        background-color: rgb(217, 174, 148);
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+
+    .content{
+        display: flex;
+        font-weight: bolder;
+        font-size: 3rem;
+        margin-top: 0.7rem;
+        justify-content: center;
+    }
+} 
