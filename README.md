@@ -2,9 +2,15 @@
 Chart that shows ipc data from a fake api. Includes login screen.
 
 ## Pre-requisites
-To work correctly install and run the nodejs server :
-
+This app uses the api server:
 >https://github.com/csarg26/jwt_server 
+
+There is an instance of this server on heroku:
+https://jwt-fake-server.herokuapp.com/api/
+
+OR
+To work locally install it following the repo instructions and configure url on
+>src\constants.ts
 
 ## Install
 Clone the repo and run 
