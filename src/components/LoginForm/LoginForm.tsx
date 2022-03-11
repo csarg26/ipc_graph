@@ -13,6 +13,7 @@ const LoginForm = () => {
 
     const onSubmit = async ({ user, password }) => {
         const res = await loginUser({email: user, password});
+
         if(res.access_token){
             onLogin(res.access_token);
         }
